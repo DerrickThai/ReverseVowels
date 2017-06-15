@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		360244B93D1861695401E4C2 /* Pods_ReverseVowelsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9846744A9D25BA90A48257A /* Pods_ReverseVowelsTests.framework */; };
 		F6A316C91EF1D5A000C0B79D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A316C81EF1D5A000C0B79D /* main.swift */; };
+		F6A316D61EF1D62600C0B79D /* ReverseVowelsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A316D51EF1D62600C0B79D /* ReverseVowelsTests.swift */; };
+		F6A316DC1EF1D67A00C0B79D /* String+ReverseVowels.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A316DB1EF1D67A00C0B79D /* String+ReverseVowels.swift */; };
+		F6D81E2E1EF1D9B500B135B6 /* String+ReverseVowels.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A316DB1EF1D67A00C0B79D /* String+ReverseVowels.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +27,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0D5A5649678A624E2FAD449D /* Pods-ReverseVowelsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReverseVowelsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReverseVowelsTests/Pods-ReverseVowelsTests.release.xcconfig"; sourceTree = "<group>"; };
+		A45CEBE2B040E6D71514708A /* Pods-ReverseVowelsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReverseVowelsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReverseVowelsTests/Pods-ReverseVowelsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F6A316C51EF1D5A000C0B79D /* ReverseVowels */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ReverseVowels; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6A316C81EF1D5A000C0B79D /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		F6A316D31EF1D62600C0B79D /* ReverseVowelsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReverseVowelsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6A316D51EF1D62600C0B79D /* ReverseVowelsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReverseVowelsTests.swift; sourceTree = "<group>"; };
+		F6A316D71EF1D62600C0B79D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6A316DB1EF1D67A00C0B79D /* String+ReverseVowels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+ReverseVowels.swift"; sourceTree = "<group>"; };
+		F9846744A9D25BA90A48257A /* Pods_ReverseVowelsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReverseVowelsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,14 +46,42 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F6A316D01EF1D62600C0B79D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				360244B93D1861695401E4C2 /* Pods_ReverseVowelsTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00E81F67C37909EF855A5B5A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A45CEBE2B040E6D71514708A /* Pods-ReverseVowelsTests.debug.xcconfig */,
+				0D5A5649678A624E2FAD449D /* Pods-ReverseVowelsTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		664252D50924790416D7825F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F9846744A9D25BA90A48257A /* Pods_ReverseVowelsTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F6A316BC1EF1D5A000C0B79D = {
 			isa = PBXGroup;
 			children = (
 				F6A316C71EF1D5A000C0B79D /* ReverseVowels */,
+				F6A316D41EF1D62600C0B79D /* ReverseVowelsTests */,
 				F6A316C61EF1D5A000C0B79D /* Products */,
+				00E81F67C37909EF855A5B5A /* Pods */,
+				664252D50924790416D7825F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -50,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				F6A316C51EF1D5A000C0B79D /* ReverseVowels */,
+				F6A316D31EF1D62600C0B79D /* ReverseVowelsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,8 +98,18 @@
 			isa = PBXGroup;
 			children = (
 				F6A316C81EF1D5A000C0B79D /* main.swift */,
+				F6A316DB1EF1D67A00C0B79D /* String+ReverseVowels.swift */,
 			);
 			path = ReverseVowels;
+			sourceTree = "<group>";
+		};
+		F6A316D41EF1D62600C0B79D /* ReverseVowelsTests */ = {
+			isa = PBXGroup;
+			children = (
+				F6A316D51EF1D62600C0B79D /* ReverseVowelsTests.swift */,
+				F6A316D71EF1D62600C0B79D /* Info.plist */,
+			);
+			path = ReverseVowelsTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +132,26 @@
 			productReference = F6A316C51EF1D5A000C0B79D /* ReverseVowels */;
 			productType = "com.apple.product-type.tool";
 		};
+		F6A316D21EF1D62600C0B79D /* ReverseVowelsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6A316D81EF1D62600C0B79D /* Build configuration list for PBXNativeTarget "ReverseVowelsTests" */;
+			buildPhases = (
+				F5D2962AB37F927AFDEE76A4 /* [CP] Check Pods Manifest.lock */,
+				F6A316CF1EF1D62600C0B79D /* Sources */,
+				F6A316D01EF1D62600C0B79D /* Frameworks */,
+				F6A316D11EF1D62600C0B79D /* Resources */,
+				1FF5CDBCCFBB8CA47CFCBC45 /* [CP] Embed Pods Frameworks */,
+				3DD2736258C06FA20A1CBDA1 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReverseVowelsTests;
+			productName = ReverseVowelsTests;
+			productReference = F6A316D31EF1D62600C0B79D /* ReverseVowelsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -93,6 +163,10 @@
 				ORGANIZATIONNAME = "Derrick Thai";
 				TargetAttributes = {
 					F6A316C41EF1D5A000C0B79D = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+					F6A316D21EF1D62600C0B79D = {
 						CreatedOnToolsVersion = 8.3.2;
 						ProvisioningStyle = Automatic;
 					};
@@ -111,9 +185,68 @@
 			projectRoot = "";
 			targets = (
 				F6A316C41EF1D5A000C0B79D /* ReverseVowels */,
+				F6A316D21EF1D62600C0B79D /* ReverseVowelsTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F6A316D11EF1D62600C0B79D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1FF5CDBCCFBB8CA47CFCBC45 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReverseVowelsTests/Pods-ReverseVowelsTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3DD2736258C06FA20A1CBDA1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReverseVowelsTests/Pods-ReverseVowelsTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F5D2962AB37F927AFDEE76A4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F6A316C11EF1D5A000C0B79D /* Sources */ = {
@@ -121,6 +254,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6A316C91EF1D5A000C0B79D /* main.swift in Sources */,
+				F6A316DC1EF1D67A00C0B79D /* String+ReverseVowels.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6A316CF1EF1D62600C0B79D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6A316D61EF1D62600C0B79D /* ReverseVowelsTests.swift in Sources */,
+				F6D81E2E1EF1D9B500B135B6 /* String+ReverseVowels.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,6 +363,7 @@
 		F6A316CD1EF1D5A000C0B79D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEFINES_MODULE = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -228,7 +372,38 @@
 		F6A316CE1EF1D5A000C0B79D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEFINES_MODULE = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		F6A316D91EF1D62600C0B79D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A45CEBE2B040E6D71514708A /* Pods-ReverseVowelsTests.debug.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = NO;
+				INFOPLIST_FILE = ReverseVowelsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = derrick.ReverseVowelsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		F6A316DA1EF1D62600C0B79D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D5A5649678A624E2FAD449D /* Pods-ReverseVowelsTests.release.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = NO;
+				INFOPLIST_FILE = ReverseVowelsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = derrick.ReverseVowelsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -252,6 +427,16 @@
 				F6A316CE1EF1D5A000C0B79D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F6A316D81EF1D62600C0B79D /* Build configuration list for PBXNativeTarget "ReverseVowelsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6A316D91EF1D62600C0B79D /* Debug */,
+				F6A316DA1EF1D62600C0B79D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

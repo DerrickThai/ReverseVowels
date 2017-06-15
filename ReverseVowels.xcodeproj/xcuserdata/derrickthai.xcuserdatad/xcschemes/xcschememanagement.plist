@@ -9,10 +9,20 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>ReverseVowelsTests.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>F6A316C41EF1D5A000C0B79D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F6A316D21EF1D62600C0B79D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
